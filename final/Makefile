@@ -1,4 +1,4 @@
-TARGET = hellomake
+TARGET = gpa
 LIBS = -lm
 CC = gcc
 CFLAGS = -g -Wall -I.
@@ -8,8 +8,8 @@ CFLAGS = -g -Wall -I.
 default: $(TARGET)
 all: default
 
-HEADERS = hellofunc.h
-OBJECTS = hellomake.o hellofunc.o
+HEADERS = test.h
+OBJECTS = gpa.o test.o
 
 %.o: %.c $(HEADERS)
 	$(CC) $(CFLAGS) -c $< -o $@
